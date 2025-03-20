@@ -1,7 +1,7 @@
 const Header = () => {
     return (
         <header>
-            <h1>Bienvenue sur mon portfolio</h1>
+            <h1>My Portfolio</h1>
         </header>
     );
 };
