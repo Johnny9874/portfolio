@@ -57,4 +57,23 @@ git checkout dev
 ## Création de l'application via React et Vite
 
 Bien vérifier qu'on est sur la branche dev;
-Puis exécuter npm create vite@latest . --template react
+Puis exécuter : npm create vite@latest frontend
+Choisir React et JavaScript;
+Et exécuter :
+
+```sh
+cd frontend 
+npm install
+npm run dev
+```
+
+Notre site sera alors accessible sur http://localhost:5173/ 
+
+Pensons à bien enregistrer le tout sur GitHub via :
+
+```sh 
+git add .
+git commit -m "Initialisation du projet React avec Vite"
+git push origin dev
+```
+
