@@ -9,4 +9,4 @@ const About = () => {
     );
 };
 
-export default About(); // Export About
+export default About; // Export About
