@@ -77,3 +77,67 @@ git commit -m "Initialisation du projet React avec Vite"
 git push origin dev
 ```
 
+## Création des dossiers components, section et style ainsi que les fichiers correspondant
+
+Afin de créer le site, il me faut des composants contenant des blocs de code, ces composants seront utiliser pour créer donc l'application pour ce faire j'ai crée directement les dossiers et leurs fichier respectif manuellement tel que components, section(contient les composants de toutes les sections de l'application) et styles(contient tout les fichiers de style).
+
+## Ajout de code dans les composants
+
+Après avoir crée les différents dossier ainsi que les fichiers, j'ai coder les 4 composants des 4 sections de l'application.
+
+IMPORTANT :
+
+- La structure à respecter pour nos composants est la suivante :
+
+```sh
+const NomDuComposant = () => {
+    return (
+        code du composant
+    );
+};
+
+export default NomDuComposant;
+```
+
+Après qu'on ai fini avec les composants et qu'on ai bien fait attention à l'export du composant, attardons-nous sur l'import de ces composants dans le fichier App.jsx :
+
+```sh 
+import NomDuComposant from "./section/NomDuComposant";
+
+const app = () => {
+    return (
+        <>
+            <NomDuComposant />
+        </>
+    );
+};
+
+export default App;
+```
+
+Ici, les points important est <NomDuComposant /> dans le fragment du composant app qui permet donc d'exécuter le code de NomDuComposant dans le composant app. 
+
+Quand on a pu vérifier que les composants sont bien exporté et importé dans App.jsx depuis http://localhost:5173/ ,on a plus qu'a push : 
+
+```sh 
+git checkout dev
+git add .
+git commit -m "ajout du code dans les composants"
+git push origin dev
+```
+
+## Stylisons l'application
+
+Passons maintenant a la mise en place du style de notre application !
+
+J'ai commencé par crée plusieurs fichier css pour chaque composant responsable des sections de l'application dans le dossier frontend/src/styles.
+
+Puis j'ai importé chaque fichier css dans le bon composant en fessant attention au chemin ménant au fichier css en question avec :
+```sh
+import "chemin d'accès du fichier css";
+```
+
+On va commencer par le composant Header :
+
+
+

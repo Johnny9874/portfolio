@@ -1,3 +1,5 @@
+import './../styles/About.css'; // Import About.css
+
 const About = () => {
     return (
         <section id="about">

@@ -1,3 +1,5 @@
+import './../styles/Project.css'; // Import Project.css
+
 const Projects = () => {
     return (
         <section id="projects">

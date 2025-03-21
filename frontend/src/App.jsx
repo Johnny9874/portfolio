@@ -7,13 +7,13 @@ import "./styles/global.css"; // Import global styles
 
 const App = () => {
   return (
-    <>
+    <div id="root">
       <Header />
       <Home />
       <Projects />
       <About />
       <Contact />
-    </>
+    </div>
   );
 };
 

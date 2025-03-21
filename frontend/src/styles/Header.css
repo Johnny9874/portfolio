@@ -1,0 +1,61 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Reset rapide pour le header */
+header {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 20px 0; /* ✅ Espace interne en haut et en bas */
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border: 2px solid red;
+}
+
+/* Navbar principale */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  height: auto;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: inherit;
+  border: 2px solid red;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Liens de navigation */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-links li a:hover {
+  color: #1ee2d2; 
+  transform: scale(1.1); /* Effet de zoom léger */
+}

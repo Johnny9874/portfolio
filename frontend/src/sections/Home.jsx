@@ -1,3 +1,5 @@
+import './../styles/Home.css'; // Import Home.css
+
 const Home = () => {
     return (
         <section id="home">
