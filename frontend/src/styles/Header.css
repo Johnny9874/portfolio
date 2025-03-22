@@ -38,7 +38,7 @@ header {
 /* Liens de navigation (version desktop) */
 .nav-links {
   list-style: none;
-  display: flex;
+  display: flex; /* Aligne les liens horizontalement */
   gap: 60px;
   font-size: 1.5rem;
   font-weight: bold;
@@ -74,11 +74,11 @@ header {
   }
 
   .nav-links {
-    position: absolute;
-    display: none;
-    top: 100%;
-    left: 0;
-    width: 100%;
+    position: absolute; /* Sort du flux normal */
+    display: none; /* Cache les liens de navigation */
+    top: 100%; /* Juste en dessous de la barre de navigation */
+    left: 0; /* Collé à gauche */
+    width: 100%; /* Pleine largeur */
     flex-direction: column;
     background-color: #1f1f1f;
     gap: 20px;
