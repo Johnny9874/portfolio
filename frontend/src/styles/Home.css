@@ -1,3 +1,19 @@
+/* ✅ Animation d’apparition au chargement */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards;
+  }
+  
+  /* ✨ Keyframes de l’animation */
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
 /* Image de profil ronde et responsive */
 .profile-pic {
     width: 150px;
@@ -22,3 +38,66 @@
       height: 120px;
     }
   }
+
+
+/* Conteneur des boutons */
+.cta-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 25px;
+    flex-wrap: wrap; /* Pour gérer le responsive */
+  }
+  
+  /* Bouton principal */
+  .cta-button {
+    background-color: #1ee2d2;
+    color: #1f1f1f;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Variante pour le deuxième bouton */
+  .cta-button.secondary {
+    background-color: #1ee2d2;
+    border: 2px solid #1ee2d2;
+    color: #000000;
+  }
+  
+  /* Hover pour les deux */
+  .cta-button:hover {
+    transform: scale(1.05);
+  }
+  
+  .cta-button.secondary:hover {
+    background-color: #1ee2d2;
+    color: #1e63e2;
+  }
+
+  .tech-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .tech-icons svg {
+    font-size: 2.5rem;
+    color: #1ee2d2;
+    transition: transform 0.2s ease, color 0.3s ease;
+  }
+  
+  .tech-icons svg:hover {
+    transform: scale(1.2);
+    color: #ffffff;
+  }
+  
+.title {
+    text-align: center;
+}

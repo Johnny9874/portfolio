@@ -3,7 +3,7 @@ import './../styles/Project.css'; // Import Project.css
 const Projects = () => {
     return (
         <section id="projects">
-            <h2>My Projects</h2>
+            <h1>My Projects</h1>
         </section>
     );
 };
