@@ -1,12 +1,16 @@
 import './../styles/Home.css'; // Import Home.css
+import profilePic from './../assets/Moi.jpg'; // Import profile picture
 
 const Home = () => {
     return (
         <section id="home">
-            <h1>Welcome to My Portfolio</h1>
+            <h1>Hey, I'm Johnny YE 👋</h1>
+            <h2>Full-Stack Web Developer & Lifelong Learner</h2>
             <p>
-                Hi, I'm Johnny YE. I'm a software engineer with a passion for web development. I have experience with JavaScript, React, and Node.js. I am a quick learner and a team player, always looking to grow and improve my skills. 
-            </p>  
+            I craft modern web apps with clean code, performance in mind and a user-first experience.
+            You can see my work just bellow or check out my <a href="#projects">projects</a> and <a href="#contact">contact</a> me. 
+            </p>
+            <img src={profilePic} alt="Johnny YE" className="profile-pic" />
         </section>
     );
 };

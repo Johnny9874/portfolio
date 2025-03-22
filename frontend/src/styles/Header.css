@@ -75,6 +75,7 @@ header {
 
   .nav-links {
     position: absolute;
+    display: none;
     top: 100%;
     left: 0;
     width: 100%;
