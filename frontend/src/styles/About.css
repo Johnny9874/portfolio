@@ -1,0 +1,23 @@
+.soft-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .skill-badge {
+    background-color: #1ee2d2;
+    color: #1f1f1f;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+  }
+  
+  .skill-badge:hover {
+    transform: scale(1.05);
+  }
+  

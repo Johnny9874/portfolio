@@ -102,14 +102,13 @@
     text-align: center;
 }
 
-.home {
+.home-container {
   text-align: center;
 }
 
-.home img {
-  width: 40%;
+.home-container img {
+  width: 50%;
   max-width: 400px;
   height: auto;
-  margin: 0 auto;
 }
 

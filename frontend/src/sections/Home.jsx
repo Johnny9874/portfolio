@@ -2,11 +2,12 @@ import './../styles/Home.css'; // Import Home.css
 import profilePic from './../assets/Moi.jpg'; // Import profile picture
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs } from 'react-icons/fa'; // Import icons
 import { SiMongodb } from 'react-icons/si'; // Import icons
+import SectionWrapper from '../components/SectionWrapper'; // Import SectionWrapper
 
 
 const Home = () => {
     return (
-        <section className="home">
+        <SectionWrapper className="home">
             <div className='home-container fade-in'>
                 <br /><br />
                 <img src={profilePic} alt="Johnny YE" className="profile-pic" />
@@ -36,7 +37,7 @@ const Home = () => {
                     <SiMongodb />
                 </div>
             </div>
-        </section>
+        </SectionWrapper>
     );
 };
 
