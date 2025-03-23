@@ -137,7 +137,40 @@ Puis j'ai importé chaque fichier css dans le bon composant en fessant attention
 import "chemin d'accès du fichier css";
 ```
 
-On va commencer par le composant Header :
+Après avoir bien styliser et animé les differents composant,
 
+## Déployons l'application via Vercel 
+
+J'ai ensuite déployer l'application via Vercel en me connectant via GitHub, puis j'ai choisis le repository GitHub de mon application, j'ai mis en tant que FrameWork "Other" et Override Build Command et output Directory dans FrameWork Setting de mon application et j'ai saisi npm run build dans Build Command et dist dans Output Directory. 
+
+J'ai aussi executer npm run build dans frontend afin de crée le dossier dist dans mon dossier et mis frontend dans Root Directory j'ai tout sauvegarder et on peut maintenant accédé à l'application via ce lien : 
+
+https://portfolio-45f3a0e4n-johnnys-projects-8f8a80ea.vercel.app/
+
+Voici comment on va si prendre pour continuer le développement et pousser sur Vercel les modifications validé en ammont en local :
+
+On garde le process de rester sur la branche dev quand on travaille sur le code source via :
+
+```sh
+npm run dev
+```
+
+Puis lorsque on s'arrete de travailler ou ce que ce qu'on voulait faire est finalisé et valide on : 
+
+```sh
+git add .
+git commit -m "X"
+git push origin dev
+```
+
+Puis :
+
+```sh
+git checkout main
+git merge dev
+git push origin main
+```
+
+Vercel detectera le push sur main et redéploiera le site !
 
 
