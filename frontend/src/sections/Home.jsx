@@ -6,8 +6,9 @@ import { SiMongodb } from 'react-icons/si'; // Import icons
 
 const Home = () => {
     return (
-        <section id="home">
+        <section className="home">
             <div className='home-container fade-in'>
+                <br /><br />
                 <img src={profilePic} alt="Johnny YE" className="profile-pic" />
 
                 <h1>Hey, I'm Johnny YE 👋</h1>

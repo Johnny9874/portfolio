@@ -102,3 +102,14 @@
     text-align: center;
 }
 
+.home {
+  text-align: center;
+}
+
+.home img {
+  width: 40%;
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto;
+}
+
