@@ -145,6 +145,7 @@ J'ai ensuite déployer l'application via Vercel en me connectant via GitHub, pui
 
 J'ai aussi executer npm run build dans frontend afin de crée le dossier dist dans mon dossier et mis frontend dans Root Directory j'ai tout sauvegarder et on peut maintenant accédé à l'application via ce lien : 
 
+
 https://portfolio-johnnys-projects-8f8a80ea.vercel.app/
 
 Voici comment on va si prendre pour continuer le développement et pousser sur Vercel les modifications validé en ammont en local :
